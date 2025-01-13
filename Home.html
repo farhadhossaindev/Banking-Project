@@ -14,41 +14,42 @@
 
 
     <section>
-        <div class="grid md:grid-cols-3 gap-4 mt-12 text-center mx-auto container px-10">
+        <div class="grid md:grid-cols-3 gap-7 mt-12 text-center mx-auto container px-10">
             <div
                 class="bg-green-200 border-2 border-green-500 mx-auto p-5 font-semibold text-xl rounded shadow-lg w-full">
                 <p>Diposite</p>
-                <p class="text-2xl">$00</p>
+                <p class="text-2xl">$<span id="dipositeamount">00</span></p>
             </div>
             <div
                 class="bg-red-200 border-2 border-red-500 w-1/2 mx-auto p-5 font-semibold text-xl rounded shadow-lg w-full">
                 <p>Withdraw</p>
-                <p class="text-2xl">$00</p>
+                <p class="text-2xl">$<span id="Withdraw_amount">00</span></p>
             </div>
             <div
                 class="bg-purple-200 border-2 border-purple-500 w-1/2 mx-auto p-5 font-semibold text-xl rounded shadow-lg w-full">
                 <p>Total Balance</p>
-                <p class="text-2xl">$00</p>
+                <p class="text-2xl">$<span id="total_blance">1400</span></p>
             </div>
         </div>
     </section>
     <section>
         <div class="grid md:grid-cols-2 gap-4 mt-12 text-center mx-auto container px-10">
 
-            <div class=" bg-teal-200 p-5 rounded shadow-lg">
-                <h2 class="text-2xl font-semibold border-b-2 border-teal-500 pb-2 w-[170px] mx-auto">Please Diposite
+            <div class=" bg-blue-300 p-5 rounded shadow-lg">
+                <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 w-[170px] mx-auto">Please Diposite
                 </h2>
-                <input class="mt-5 block mx-auto w-1/2 p-2 text-xl outline-none rounded font-semibold" type="number"
+                <input id="dipositeInput"
+                    class="mt-5 block mx-auto w-1/2 p-2 text-xl outline-none rounded font-semibold" type="number"
                     placeholder="$$">
-                <button class="bg-red-400 text-white mt-5 py-2 px-6 text-xl rounded ">Diposite</button>
+                <button id="dipositeBtn" class="bg-red-600 text-white mt-5 py-2 px-6 text-xl rounded ">Diposite</button>
             </div>
 
-            <div class=" bg-rose-200 p-5 rounded shadow-lg">
-                <h2 class="text-2xl font-semibold border-b-2 border-rose-500 pb-2 w-[185px] mx-auto">Please Withdraw
+            <div class=" bg-cyan-300 p-5 rounded shadow-lg">
+                <h2 class="text-2xl font-semibold border-b-2 border-cyan-500 pb-2 w-[185px] mx-auto">Please Withdraw
                 </h2>
-                <input class="mt-5 block mx-auto w-1/2 p-2 text-xl outline-none rounded font-semibold" type="number"
+                <input id="Withdraw_input" class="mt-5 block mx-auto w-1/2 p-2 text-xl outline-none rounded font-semibold" type="number"
                     placeholder="$$">
-                <button class="bg-red-400 text-white mt-5 py-2 px-6 text-xl rounded ">Withdraw</button>
+                <button id="Withdraw_btn" class="bg-red-600 text-white mt-5 py-2 px-6 text-xl rounded ">Withdraw</button>
             </div>
 
 
